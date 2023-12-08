@@ -9,6 +9,7 @@ var opponent = document.getElementById('opponent');
 var overDiv = document.getElementById('over')
 var won = document.getElementById('winner')
 var playAgainBtn = document.getElementById('Again')
+var audio = document.getElementById('audio')
 var score1=0;
 var score2=0;
 var click =0;
@@ -101,6 +102,7 @@ function Comp(){
     logoBtn.style.visibility = "hidden"
     overDiv.style.visibility = "visible";
     won.innerText = "Comp "
+    audio.play()
 }
 playAgainBtn.onclick = () => {
     location.reload(true);
